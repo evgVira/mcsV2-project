@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  v2_product_db:
+    container_name: product-store-db
+    image: postgres:15
+    ports:
+      - "5434:5432"
+    environment:
+      - POSTGRES_DB=product_store_db
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
